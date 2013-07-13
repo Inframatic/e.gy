@@ -1,0 +1,10 @@
+#sidebar
+{
+    position:fixed;
+    float: left;
+    margin-top: 30px;
+    width: 250px;
+    background: white;
+    min-height: 100%;
+    opacity: .85;
+}
