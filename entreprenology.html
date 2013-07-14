@@ -2,9 +2,9 @@
 <!-- <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US"> -->
 <head>
 	<title>Mmmhmmmmm  </title>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<link href='http://fonts.googleapis.com/css?family=Offside|Monda|Graduate|Text+Me+One|Bree+Serif|Aldrich:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="leaflet.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="stylepage.css" type="text/css" media="screen" />
 	<link href="sidebar.css" rel="stylesheet" />
 	<link href="leaflet.css" rel="stylesheet" type="text/css" />
@@ -33,16 +33,14 @@
 		<div id="page">
 			<div id="header">
 				<div id="headerimg">
-						<a href=""><img src="https://si0.twimg.com/profile_images/2798567096/e81d96cc9a0765b0a6138f56267a4548_bigger.png" /></a>
+						<a href=""><img src="./entreprelogo.png" HEIGHT="80" WIDTH="80" BORDER="0" /></a>
 					</div>
 				<!--<div class="wrap">-->
 					
 				<div id="headernav">
 					<ul>
 						<li><a href="">About</a></li>
-						<li><a href=""></a></li>
 						<li><a href="">Register</a></li>
-						<li class="no-border-right"><a href=""></a></li>
 						<li class="submit"><a href="">Sign in</a></li>
 					</ul>
 				</div>
@@ -54,7 +52,20 @@
     	<h1>Sidebar</h1>
   	</div> -->
 	
-		</div>
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+      <p class="name">
+        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      
+    </form>
+  </div>
+
 	
 
 	<script type="text/javascript">
