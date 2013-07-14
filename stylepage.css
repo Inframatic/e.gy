@@ -56,7 +56,7 @@ body {
 #header {
 	position: fixed;
 	padding: 0px;
-	height: 80px;
+	height: 90px;
 	font-color:white;
 	background-color: #1E1F1F;
 	opacity: .85;
@@ -312,8 +312,10 @@ right: 3%;
 top:20%;
 }
 
-#interncircle :hover {
-	opacity:1;
+#interncircle:hover {
+	background-color:#5D968E;
+	opacity: .99;
+
 }
 
 
