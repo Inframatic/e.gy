@@ -43,14 +43,14 @@ body {
 }
 #headerimg {
 	width: 210px;
+	margin-left: 1%;
 	float: left;
-	opacity: 1.0;
 }
 #headernav {
 	width: 633px;
 	float: right;
 	text-align: right;
-	margin-right: -25px;
+	margin-right: 1%;
 }
 #headernav ul,
 #headernav li {
@@ -63,7 +63,7 @@ body {
 }
 #headernav li a {
 	display: block;
-	float: left;
+	float: right;
 	padding: 30px 32px 8px 32px;
 	border-left: solid 1px #333333;
 	border-right: solid 1px #333333;
