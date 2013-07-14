@@ -82,7 +82,8 @@ body {
 }
 #headernav li.submit a,
 #headernav li.submit a:hover {
-	background-color: #6fb3a9;
+	background-color: #ddd9c9;
+	color: black;
 	border: none;
 }
 #headernav li.submit a:hover img {
@@ -240,5 +241,55 @@ textarea {
 }
 
 /*email, name box end*/
+
+.questionbox {
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	height:350px;
+	float: left;
+	top: 30%;
+	left: 40%;
+	position: absolute;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+ background-color: white;
+  }
+
+
+
+#interncircle {
+-webkit-border-radius: 280px;
+-moz-border-radius: 280px;
+border-radius: 280px;
+width:280px;
+height:280px;
+behavior: url(PIE.htc);
+background-color: #6fb3a9;
+opacity:.8;
+position:absolute;
+display:inline-block;
+right: 45%;
+top:20%;
+
+}
+
+#startupcircle {
+-webkit-border-radius: 280px;
+-moz-border-radius: 280px;
+border-radius: 280px;
+width:280px;
+height:280px;
+behavior: url(PIE.htc);
+background-color: #cf6442;
+position:absolute;
+display:inline-block;
+opacity:.6;
+right: 2%;
+top:20%;
+
+}
 
 
