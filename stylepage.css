@@ -1,4 +1,23 @@
 /* Begin Structure */
+h2 {
+	float: top;
+	font-family: 'Offside', cursive;'
+	font-size: 1px;
+	overflow: none;
+	text-align: center;
+	padding-bottom: 90%;
+	color:white;
+}
+
+h1 {
+	padding-top: 35%;
+	padding-bottom: 30%;
+	font-family: 'Offside', cursive;'
+	font-size: 16px;
+	overflow: none;
+	text-align: center;
+	color:white;
+}
 
 #map { 
 	height:100%;
@@ -245,17 +264,19 @@ textarea {
 .questionbox {
 	padding-left:35px;
 	padding-right:35px;
-	padding-top:35px;
+	padding-top:10px;
 	padding-bottom:50px;
-	width: 450px;
+	width: 487px;
+	margin: 0px;
 	height:350px;
 	float: left;
 	top: 30%;
 	left: 40%;
 	position: absolute;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
- background-color: white;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+ background-color: #1E1F1F;
+ opacity:.9;
   }
 
 
@@ -271,7 +292,7 @@ background-color: #6fb3a9;
 opacity:.8;
 position:absolute;
 display:inline-block;
-right: 45%;
+right: 47%;
 top:20%;
 
 }
@@ -286,10 +307,13 @@ behavior: url(PIE.htc);
 background-color: #cf6442;
 position:absolute;
 display:inline-block;
-opacity:.6;
-right: 2%;
+opacity:.8;
+right: 3%;
 top:20%;
+}
 
+#interncircle :hover {
+	opacity:1;
 }
 
 
