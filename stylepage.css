@@ -1,24 +1,4 @@
 /* Begin Structure */
-h2 {
-	float: top;
-	font-family: 'Offside', cursive;'
-	font-size: 27px;
-	overflow: none;
-	text-align: center;
-	padding-bottom: 90%;
-	color:white;
-}
-
-h1 {
-	padding-top: 35%;
-	padding-bottom: 30%;
-	font-family: 'Offside', cursive;'
-	font-size: 36px;
-	overflow: none;
-	text-align: center;
-	color:white;
-	opacity:1;
-}
 
 #map { 
 	height:100%;
@@ -29,8 +9,9 @@ h1 {
  }
 
 body {
-	background-color: #96D478;
+	background-color: #ddd;
 	margin: 0 auto;
+
 }
 
 #content.about {
@@ -52,17 +33,20 @@ body {
 #header {
 	position: fixed;
 	padding: 0px;
-	height: 90px;
+	height: 89px;
 	font-color:white;
 	background-color: #1E1F1F;
-	opacity: .85;
-	font-family: 'Aldrich', sans-serif;
+	opacity: .95;
+	font-family: 'Offside', cursive;'
+
 }
 
 #headerimg {
 	width: 210px;
 	margin-left: 1%;
 	float: left;
+	opacity: 0.7;
+	margin-top: '0px';
 }
 
 #headernav {
@@ -70,6 +54,7 @@ body {
 	float: right;
 	text-align: right;
 	margin-right: 1%;
+	height: 100%;
 }
 
 #headernav ul {
@@ -77,14 +62,17 @@ body {
 	margin: 0px;
 	list-style: none;
 	display: inline;
+	height:90px;
 }
 
 .nav-buttons a {
 	display: block;
 	float: right;
-	padding: 30px 32px 8px 32px;
+	padding: 30px 32px 30px 32px;
 	border-right: solid 1px #333333;
 	margin-left: -1px;
+	font-size: 121%;
+	text-decoration: none;
 }
 
 #sign-in a,
@@ -92,6 +80,12 @@ body {
 	background-color: #ddd9c9;
 	color: black;
 	border: none;
+	bottom:0;
+}
+
+#headerimg img:hover {
+	opacity: 1.0; 
+	margin-top: '5px';
 }
 
 /*#headernav li a img {
@@ -111,9 +105,6 @@ body {
 	border-right: none;
 }*/
 
-a {
-	text-decoration: none;
-}
 
 a:visited
 {
@@ -262,6 +253,7 @@ textarea {
 
 /*Question box Stuff*/
 .questionbox {
+	display:none;
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:10px;
@@ -276,11 +268,34 @@ textarea {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   background: rgba(3, 5, 5, 0.8);
+  font-size: 18px;
  /*background-color: #1E1F1F;*/
  /*opacity:.8;*/
   }
 
+.questionbox h2 {
+	float: top;
+	font-family: 'Offside', cursive;'
+	font-size: 27px;
+	overflow: none;
+	text-align: center;
+	padding-bottom: 90%;
+	color:white;
+	padding-left: 10%;
+	padding-right: 10%
+}
 
+.questionbox h1 {
+	padding-top: 35%;
+	padding-bottom: 30%;
+	font-family: 'Offside', cursive;'
+	font-size: 60%;
+/*	overflow: none;*/
+	text-align: center;
+	color:white;
+	opacity:1;
+	float:top;
+}
 
 #interncircle {
 -webkit-border-radius: 280px;
@@ -294,7 +309,7 @@ position:absolute;
 display:inline-block;
 right: 47%;
 top:20%;
-transition: 0.5s all ease-in-out;
+transition: 0.2s all ease-in-out;
 }
 
 #startupcircle {
@@ -309,7 +324,7 @@ position:absolute;
 display:inline-block;
 right: 3%;
 top:20%;
-transition: 0.5s all ease-in-out;
+transition: 0.2s all ease-in-out;
 }
 
 #interncircle:hover {
@@ -325,4 +340,57 @@ transition: 0.5s all ease-in-out;
 #startupcircle:active {
 
 }
+
 /*---------------Question Box stuff ends------------*/
+
+#welcomebox{
+/*	display: none;*/
+	width: 687px;
+	margin: 0px;
+	height:550px;
+	font-color:white;
+	background-color: #1E1F1F;
+	opacity: .95;
+	font-family: 'Offside', cursive;'
+	-moz-border-radius: 15px;
+  	webkit-border-radius: 15px;
+  	border-radius:15px;
+  	float: left;
+	top: 300px;
+	left: 37%;
+	right:35%;
+	position:relative;
+}
+
+#welcomebox h2 {
+	float: top;
+	font-family: 'Offside', cursive;'
+	font-size: 27px;
+	/*overflow: none;*/
+	text-align: center;
+	color:white;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 4%;
+}
+
+#welcomebox p {
+	font-family: 'Offside', cursive;'
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	opacity: 1;
+	position:relative;
+}
+
+#welcomeimg {
+	width: 210px;
+	padding-top:35%;
+	padding-left: 40%;
+	position:relative;
+}
+
+#next {
+	opacity
+	transition: 1s all ease-in-out;	
+}
