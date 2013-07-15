@@ -2,7 +2,7 @@
 h2 {
 	float: top;
 	font-family: 'Offside', cursive;'
-	font-size: 1px;
+	font-size: 27px;
 	overflow: none;
 	text-align: center;
 	padding-bottom: 90%;
@@ -13,10 +13,11 @@ h1 {
 	padding-top: 35%;
 	padding-bottom: 30%;
 	font-family: 'Offside', cursive;'
-	font-size: 16px;
+	font-size: 36px;
 	overflow: none;
 	text-align: center;
 	color:white;
+	opacity:1;
 }
 
 #map { 
@@ -32,24 +33,19 @@ body {
 	margin: 0 auto;
 }
 
-.wrap {
-	width: 950px;
-	margin: 0px auto;
-}
-
 #content.about {
 	background-color: black;
 	padding-top: 0px;
 }
-#header, #footer {
+.head-foot-bars {
 	width: 100%;
 }
 
 /* End Structure */
 /* Classes */
-.clear {
+/*.clear {
 	clear: both;
-}
+}*/
 /* End Classes */
 
 /* Begin Header */
@@ -62,55 +58,58 @@ body {
 	opacity: .85;
 	font-family: 'Aldrich', sans-serif;
 }
+
 #headerimg {
 	width: 210px;
 	margin-left: 1%;
 	float: left;
-
 }
+
 #headernav {
 	width: 633px;
 	float: right;
 	text-align: right;
 	margin-right: 1%;
 }
-#headernav ul,
-#headernav li {
+
+#headernav ul {
 	padding: 0px;
 	margin: 0px;
 	list-style: none;
-}
-#headernav li {
 	display: inline;
 }
-#headernav li a {
+
+.nav-buttons a {
 	display: block;
 	float: right;
 	padding: 30px 32px 8px 32px;
 	border-right: solid 1px #333333;
 	margin-left: -1px;
 }
-#headernav li a img {
-	padding-bottom: 3px;
-}
-#headernav li a:hover img {
-/*	opacity: 0.5;
-	-moz-opacity: 0.5;
-	filter:alpha(opacity=50);*/
-	border-bottom: solid 1px #0a97b5;
-}
-#headernav li.submit a,
-#headernav li.submit a:hover {
+
+#sign-in a,
+#sign-in a:hover {
 	background-color: #ddd9c9;
 	color: black;
 	border: none;
 }
-#headernav li.submit a:hover img {
+
+/*#headernav li a img {
+	padding-bottom: 3px;
+}
+#headernav li a:hover img {
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter:alpha(opacity=50);
+	border-bottom: solid 1px #0a97b5;
+}*/
+
+/*#headernav #sign-in a:hover img {
 	border: none;
 }
 #headernav li.no-border-right a {
 	border-right: none;
-}
+}*/
 
 a {
 	text-decoration: none;
@@ -136,7 +135,7 @@ color:white;
 
 
 /* Navigation */
-.navigation {
+/*.navigation {
 	width: 950px;
 }
 .navigation a {
@@ -168,7 +167,7 @@ color:white;
 }
 .navigation .alignleft {
 	float: left;
-}
+}*/
 /* End Navigation */
 
 #feedback-page{
@@ -261,6 +260,7 @@ textarea {
 
 /*email, name box end*/
 
+/*Question box Stuff*/
 .questionbox {
 	padding-left:35px;
 	padding-right:35px;
@@ -275,8 +275,9 @@ textarea {
 	position: absolute;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
- background-color: #1E1F1F;
- opacity:.9;
+  background: rgba(3, 5, 5, 0.8);
+ /*background-color: #1E1F1F;*/
+ /*opacity:.8;*/
   }
 
 
@@ -288,13 +289,12 @@ border-radius: 280px;
 width:280px;
 height:280px;
 behavior: url(PIE.htc);
-background-color: #6fb3a9;
-opacity:.8;
+background:rgba(111, 179, 169, .75);
 position:absolute;
 display:inline-block;
 right: 47%;
 top:20%;
-
+transition: 0.5s all ease-in-out;
 }
 
 #startupcircle {
@@ -304,18 +304,25 @@ border-radius: 280px;
 width:280px;
 height:280px;
 behavior: url(PIE.htc);
-background-color: #cf6442;
+background:rgba(207, 100, 66, .75);
 position:absolute;
 display:inline-block;
-opacity:.8;
 right: 3%;
 top:20%;
+transition: 0.5s all ease-in-out;
 }
 
 #interncircle:hover {
-	background-color:#5D968E;
-	opacity: .99;
-
+	background:rgba(111,179,169, 1);
 }
 
+#startupcircle:hover {
+	background:rgba(207,100,66,1.0);
+}
+ #interncircle:active {
 
+ }
+#startupcircle:active {
+
+}
+/*---------------Question Box stuff ends------------*/
