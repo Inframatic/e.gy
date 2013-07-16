@@ -59,10 +59,10 @@ body {
 
 #logo {
 	padding-top: 10%;
-	min-width:15px;
+	min-width:5px;
 	min-height: 35px;
-	height:80%;
-	opacity: .7;
+	height:85%;
+	opacity: .95;
 	-moz-transition: margin 1s ease-in-out;
 	-webkit-transition: margin 1s ease-in-out;
 	transition: margin 1s ease-in-out;
@@ -128,15 +128,15 @@ body {
 }
 
 .nav-buttons a:hover {
-	padding-top: 15%;
+	padding-top: 12%;
 }
 
 
 #sign-in a,
 #sign-in a:hover {
-	background-color: #ddd9c9;
-	color: black;
-	border: none;
+/*	background-color: #ddd9c9;*/
+	color: white;
+
 }
 
 /*#headernav li a img {
@@ -305,10 +305,10 @@ textarea {
 /*Question box Stuff*/
 .questionbox {
 	display:none;
-	padding-left:35px;
-	padding-right:35px;
-	padding-top:10px;
-	padding-bottom:50px;
+	padding-left:5%;
+	padding-right:5%;
+	padding-top:4%;
+	padding-bottom:4%;
 	min-width: 487px;
 	margin: 0px;
 	min-height:350px;
