@@ -8,9 +8,10 @@ $(document).ready(function() {
 		function() { $(this).animate( { opacity: 1.0, marginTop: '5px' }, "fast" ); },
 		function() { $(this).animate( { opacity: 0.7, marginTop: '0px' }, "fast" ); }
 	);
-	$(".next").fadeToggle("fast","linear",)
+	 while (toggle = true)
+	   $("#next").fadeToggle("slow", "linear");            
 
-
+	var toggle = true
 	var cloudmadeUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg';
 	var subDomains = ['otile1','otile2','otile3','otile4'];
 	var cloudmadeAttrib = '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors';

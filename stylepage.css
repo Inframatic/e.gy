@@ -378,8 +378,9 @@ transition: 0.2s all ease-in-out;
 	font-family: 'Offside', cursive;'
 	font-size: 25px;
 	text-align: center;
-	color: white;
+	/*color: white;*/
 	opacity: 1;
+	color: rgb(255, 255, 255);
 	position:relative;
 }
 
@@ -391,6 +392,5 @@ transition: 0.2s all ease-in-out;
 }
 
 #next {
-	opacity
-	transition: 1s all ease-in-out;	
+	color: rgb(221, 217, 201);
 }
