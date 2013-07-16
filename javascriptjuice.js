@@ -1,16 +1,35 @@
 $(document).ready(function() {
+	// $('#headernav li a').hover(
+	// 	function() { $(this).animate( { opacity: 1.0, paddingTop: '15%' }, "fast" ); },
+	// 	function() { $(this).animate( { opacity: 1.0, paddingTop: '10%' }, "fast" ); }
+	// );
+	// $('#headerimg img').hover(
+	// 	function() { $(this).animate( { opacity: 1.0, marginTop: '5px' }, "fast" ); },
+	// 	function() { $(this).animate( { opacity: 0.7, marginTop: '0px' }, "fast" ); }
+	// );
 
-	$('#headernav li a').hover(
-		function() { $(this).animate( { opacity: 1.0, paddingTop: '35px' }, "fast" ); },
-		function() { $(this).animate( { opacity: 1.0, paddingTop: '30px' }, "fast" ); }
-	);
-	$('#headerimg img').hover(
-		function() { $(this).animate( { opacity: 1.0, marginTop: '5px' }, "fast" ); },
-		function() { $(this).animate( { opacity: 0.7, marginTop: '0px' }, "fast" ); }
-	);
-	 while (toggle = true)
-	   $("#next").fadeToggle("slow", "linear");            
+	if (toggle=true) {
+		enter = true
+		$("#next").fadeToggle();
+		$("#next").fadeToggle();
+		$("#next").fadeToggle();
+		$("#next").fadeToggle();
+		$("#next").fadeToggle();
+		$("#next").fadeIn();
+		toggle = false;        
+	};
 
+	
+		$(document).keypress(function(event) {
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			if (keycode == 13) { 
+				$("#welcomebox").css('display', 'none');
+				$(".questionbox").css('display', 'block');
+				enter = false;
+			}
+		})
+		
+	var enter = false
 	var toggle = true
 	var cloudmadeUrl = 'http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.jpg';
 	var subDomains = ['otile1','otile2','otile3','otile4'];
