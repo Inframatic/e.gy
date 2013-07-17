@@ -113,7 +113,6 @@ body {
 	text-align: center;
 	padding: 10% 10% 10% 10%;
 	border-right: solid 1px #333333;
-	margin-left:;
 	font-size: 1.3em;
 	text-decoration: none;
 	-webkit-transition: padding .2s ease-in-out;
@@ -121,7 +120,7 @@ body {
 	transition: padding .2s ease-in-out;
 }
 
-@media all and (max-width: 475px) and (min-width: 0px) {
+@media all and (max-width: 575px) and (min-width: 0px) {
 	.nav-buttons a {
 		font-size: .8em;
 	}
@@ -303,23 +302,29 @@ textarea {
 /*email, name box end*/
 
 /*Question box Stuff*/
-.questionbox {
-	display:none;
-	padding-left:5%;
-	padding-right:5%;
-	padding-top:4%;
-	padding-bottom:4%;
-	min-width: 487px;
-	margin: 0px;
-	min-height:350px;
-	float: left;
-	top: 30%;
-	left: 40%;
-	position: absolute;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  background: rgba(3, 5, 5, 0.8);
-  font-size: 18px;
+	.questionbox {
+	display: none;
+	top: 275px;
+	/*padding-left:5%;
+	padding-right:5%;*/
+/*	padding-top:4%;*/
+	/*padding-bottom:3%;*/
+	width: 40%;
+	max-width:573px;
+	max-height:336px;
+	min-height:20%;
+	min-width:30%;
+	/*min-height: 10px;*/
+	height: 40%;
+	margin:0 auto;
+	/*float: left;*/
+	/*top: 30%;
+	left: 36%;
+*/	position: relative;
+  	-moz-border-radius: 15px;
+  	-webkit-border-radius: 15px;
+  	background: rgba(3, 5, 5, 0.8);
+  	font-size: 18px;
     box-shadow: 0 -3px 8px rgba(0,0,0,.2),
               0 4px 10px rgba(255,255,255,1),
               inset 0 2px 4px rgba(0,0,0,.2),
@@ -327,14 +332,11 @@ textarea {
  /*background-color: #1E1F1F;*/
  /*opacity:.8;*/
   }
-
 .questionbox h2 {
-	float: top;
 	font-family: 'Offside', cursive;'
 	font-size: 27px;
 	overflow: none;
 	text-align: center;
-	padding-bottom: 90%;
 	color:white;
 	padding-left: 10%;
 	padding-right: 10%
@@ -352,59 +354,57 @@ textarea {
 	float:top;
 }
 
-#interncircle {
--webkit-border-radius: 280px;
--moz-border-radius: 280px;
-border-radius: 280px;
+.circle {
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
 width:280px;
 height:280px;
 behavior: url(PIE.htc);
-background:rgba(111, 179, 169, .75);
-position:absolute;
+/*position:absolute;*/
 display:inline-block;
-right: 47%;
-top:20%;
 transition: 0.1s all ease-in-out;
 }
 
-#startupcircle {
--webkit-border-radius: 280px;
--moz-border-radius: 280px;
-border-radius: 280px;
-width:280px;
-height:280px;
-behavior: url(PIE.htc);
-background:rgba(207, 100, 66, .75);
-position:absolute;
-display:inline-block;
-right: 3%;
-top:20%;
-transition: 0.1s all ease-in-out;
+#intern-circle {
+	left: 0;
+	bottom: 0;
+	background:rgba(111, 179, 169, .75);
 }
 
-#interncircle:hover {
-	background:rgba(111,179,169, 1);
+#internship-circle {
+	right: 0;
+	bottom: 0;
+	background:rgba(207, 100, 66, .75);
 }
 
-#startupcircle:hover {
-	background:rgba(207,100,66,1.0);
+#intern-circle:hover {
+	background:rgba(111, 179, 169, 1);
 }
- #interncircle:active {
+
+#internship-circle:hover {
+	background:rgba(207, 100, 66, 1);
+}
+ #intern-circle:active {
 
  }
-#startupcircle:active {
+#internship-circle:active {
 
 }
+
 
 /*---------------Question Box stuff ends------------*/
 
 #welcomebox{
+	/*display: none;*/
 	text-align: center;
 	max-width: 45%;
 	min-width:35%;
 	margin: 0px auto;
-	min-height: 30%;
-	max-height:35%;
+	min-height: 100px;
+	max-height: 300px;
+	/*min-height: 30%;
+	max-height:35%;*/
 	font-color:rg(255,255,255);
 	padding: 3%;
 	background-color: #1E1F1F;

@@ -8,6 +8,15 @@ $(document).ready(function() {
 	// 	function() { $(this).animate( { opacity: 0.7, marginTop: '0px' }, "fast" ); }
 	// );
 
+	// return $(window).resize(function() {
+	// 	var boxHeight = $("#welcomebox").css;
+	// 	({
+	// 		"height": function() {
+	// 	 return $(window).height() * 0.3;
+	// 	}
+	// });
+	
+
 	if (toggle=true) {
 		enter = true
 		$("#next").fadeToggle();
