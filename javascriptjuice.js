@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	// $('#headernav li a').hover(
-	// 	function() { $(this).animate( { opacity: 1.0, paddingTop: '15%' }, "fast" ); },
-	// 	function() { $(this).animate( { opacity: 1.0, paddingTop: '10%' }, "fast" ); }
-	// );
+	$('#headernav li a').hover(
+		function() { $(this).animate( { opacity: 1.0, paddingTop: '15%' }, "fast" ); },
+		function() { $(this).animate( { opacity: 1.0, paddingTop: '10%' }, "fast" ); }
+	);
 	// $('#headerimg img').hover(
 	// 	function() { $(this).animate( { opacity: 1.0, marginTop: '5px' }, "fast" ); },
 	// 	function() { $(this).animate( { opacity: 0.7, marginTop: '0px' }, "fast" ); }
@@ -33,7 +33,8 @@ $(document).ready(function() {
 			var keycode = (event.keyCode ? event.keyCode : event.which);
 			if (keycode == 13) { 
 				$("#welcomebox").css('display', 'none');
-				$(".questionbox").css('display', 'block');
+				$(".container").css('display', 'block')
+				// $(".questionbox").css('display', 'block');
 				enter = false;
 			}
 		})

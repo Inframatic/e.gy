@@ -1,3 +1,29 @@
+
+html {
+	height: 100%;
+}
+
+/*MailChimp Box*/
+
+
+.container {
+	display:none;
+	opacity: .95;
+	background-color:#FFFFFF; width:400px; border:1px solid #999999;
+	 padding:5 5 15 5; 
+	 margin: 0 auto;
+	 position:relative;
+	 top: 50%;
+	 font-family: 'Offside', cursive;'
+	 opacity: .95;
+	}
+.pageTitle {background-color:#DDDDDD; padding:8px; font-size:16px; font-weight:bold; color:#000000; text-align:left;}
+.pageTitleAlert {background-color:#FF0000; padding:8px; font-size:16px; font-weight:bold; color:#FFFFFF; text-align:left;}
+.pageTitleSuccess {background-color:#33CC00; padding:8px; font-size:16px; font-weight:bold; color:#FFFFFF; text-align:left;}
+.formLabel {font-size:13px;}
+.error {color:#FF0000; font-weight:bold; font-size:11px;}
+.small {font-size:11px;}
+
 /* Begin Structure */
 a {
 	padding-left: 15%;
@@ -15,6 +41,8 @@ a {
 body {
 	background-color: #ddd;
 	margin: 0px;
+	height:100%;
+	width: 100%;
 }
 
 #content.about {
@@ -354,17 +382,60 @@ textarea {
 	float:top;
 }
 
-.circle {
+.circle 
+{
+	overflow: hidden;
+}
+.circle .box h1 {
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 48%;
+    line-height: 1em;
+    height: 1em;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.circle .box {
+	display:block;
+    float:left;
+    padding: 12.5%;
+    width:auto;
+    height:auto;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    -khtml-border-radius: 50%;
+    background:#eee;
+    text-align:center;
+    position: relative;
+/*	text-align: center;
+	display:block;
+	padding:12.5%;
 -webkit-border-radius: 100%;
 -moz-border-radius: 100%;
 border-radius: 100%;
-width:280px;
-height:280px;
+width:auto;
+height:auto;
 behavior: url(PIE.htc);
-/*position:absolute;*/
+/*position:absolute;
 display:inline-block;
-transition: 0.1s all ease-in-out;
+transition: 0.1s all ease-in-out;*/
 }
+
+@media (max-width: 320px) {
+    .circle .box {padding: 50%;}
+}
+
+@media (min-width: 321px) and (max-width: 800px){
+    .circle .box {padding: 25%;}
+}
+
+@media (min-width: 801px){
+    .circle .box {padding: 12.5%;}
+}
+
 
 #intern-circle {
 	left: 0;
