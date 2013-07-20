@@ -25,6 +25,10 @@ $(document).ready(function() {
 		toggle = false;        
 	};
 
+	$("#signin").click(function() {
+		$("#aboutbox").css('display', 'none');
+  		$("#welcomebox").css('display', 'block');
+	});
 	$("#register").click(function() {
 		$("#aboutbox").css('display', 'none');
   		$("#welcomebox").css('display', 'block');

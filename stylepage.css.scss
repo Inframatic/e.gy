@@ -155,11 +155,13 @@ width:15%;
 	-webkit-transition: padding .2s ease-in-out;
 	-moz-transition: padding .2s ease-in-out;
 	transition: padding .2s ease-in-out;
+	color:white;
 }
 
 @media all and (max-width: 575px) and (min-width: 0px) {
 	.nav-buttons a {
 		font-size: .8em;
+
 	}
 }
 
