@@ -3,6 +3,15 @@ html {
 	height: 100%;
 }
 
+#aboutbox li {
+	list-style-type: none;
+	padding-bottom: 4%;
+	padding-top:4%;
+}
+
+tr {
+	color:white;
+}
 /*MailChimp Box*/
 
 
@@ -14,7 +23,7 @@ html {
 	 margin: 0 auto;
 	 position:relative;
 	 top: 30%;
-	 font-family: 'Offside', cursive;'
+	 font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 	 opacity: .9;
 	 text-align: center;
 	}
@@ -39,6 +48,7 @@ a {
  }
 
 body {
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 	background-color: #ddd;
 	margin: 0px;
 	height:100%;
@@ -72,7 +82,7 @@ body {
 	font-color:white;
 	background-color: #1E1F1F;
 	opacity: .95;
-	font-family: 'Offside', cursive;'
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 }
 
 
@@ -364,7 +374,7 @@ textarea {
  /*opacity:.8;*/
   }
 .questionbox h2 {
-	font-family: 'Offside', cursive;'
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 	font-size: 27px;
 	overflow: none;
 	text-align: center;
@@ -376,7 +386,7 @@ textarea {
 .questionbox h1 {
 	padding-top: 35%;
 	padding-bottom: 30%;
-	font-family: 'Offside', cursive;'
+font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 	font-size: 60%;
 /*	overflow: none;*/
 	text-align: center;
@@ -469,9 +479,7 @@ transition: 0.1s all ease-in-out;*/
 
 /*---------------Question Box stuff ends------------*/
 
-tr {
-	color:white;
-}
+
 
 #welcomebox{
 	/*display: none;*/
@@ -487,7 +495,7 @@ tr {
 	padding: 3%;
 	background-color: #1E1F1F;
 	opacity: .95;
-	font-family: 'Offside', cursive;'
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
 	-moz-border-radius: 15px;
   	webkit-border-radius: 15px;
   	border-radius:15px;
@@ -498,19 +506,18 @@ tr {
 
 #welcomebox h2 {
 	float: top;
-	font-family: 'Offside', cursive;'
-	font-size: 27px;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 23px;
 	/*overflow: none;*/
 	text-align: center;
 	color:white;
 	padding-left: 10%;
 	padding-right: 10%;
-	padding-bottom: 4%;
 }
 
 #welcomebox p {
-	font-family: 'Offside', cursive;'
-	font-size: 25px;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 20px;
 	text-align: center;
 	/*color: white;*/
 	opacity: 1;
@@ -526,3 +533,46 @@ tr {
 #next {
 	font-color: #FFD700;
 }
+
+/*------------About Box Begin------------*/
+
+#quote{
+	font-size:10px;
+	text-indent:50px;
+}
+
+#aboutbox{
+	display:none;
+	text-align: center;
+	top:20%;
+	position:absolute;
+	left:30%;
+	margin: 0 auto;
+	width:43%;
+	background-color: #1E1F1F;
+	opacity:.95;
+	color:white;
+	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	-moz-border-radius: 15px;
+  	webkit-border-radius: 15px;
+  	border-radius:15px;
+  	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	padding-top: 2%
+}
+
+#aboutinterns {
+	width:49%;
+	float: left;
+	text-align: left;
+	border-right: solid 2px white;
+
+}
+
+#aboutstartups {
+	width:49%;
+	float: left;
+	text-align: left;
+}
+

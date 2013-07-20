@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	$('#headernav li a').hover(
-		function() { $(this).animate( { opacity: 1.0, paddingTop: '15%' }, "fast" ); },
-		function() { $(this).animate( { opacity: 1.0, paddingTop: '10%' }, "fast" ); }
+		function() { $(this).animate( { opacity: 1.0, paddingTop: '35px' }, "fast" ); },
+		function() { $(this).animate( { opacity: 1.0, paddingTop: '30px' }, "fast" ); }
 	);
 	// $('#headerimg img').hover(
 	// 	function() { $(this).animate( { opacity: 1.0, marginTop: '5px' }, "fast" ); },
@@ -16,7 +16,6 @@ $(document).ready(function() {
 	// 	}
 	// });
 	if (toggle=true) {
-		enter = true
 		$("#next").fadeToggle();
 		$("#next").fadeToggle();
 		$("#next").fadeToggle();
@@ -27,9 +26,15 @@ $(document).ready(function() {
 	};
 
 	$("#register").click(function() {
+		$("#aboutbox").css('display', 'none');
   		$("#welcomebox").css('display', 'block');
 	});
+		
+	$("#about").click(function() {
+  		$("#welcomebox").css('display', 'none');
+  		$("#aboutbox").css('display', 'block');
 
+	});
 	
 		$(document).keypress(function(event) {
 			var keycode = (event.keyCode ? event.keyCode : event.which);
@@ -37,7 +42,6 @@ $(document).ready(function() {
 				$("#welcomebox").css('display', 'none');
 				$(".container").css('display', 'block')
 				// $(".questionbox").css('display', 'block');
-				enter = false;
 			}
 		})
 		
