@@ -15,8 +15,6 @@ $(document).ready(function() {
 	// 	 return $(window).height() * 0.3;
 	// 	}
 	// });
-	
-
 	if (toggle=true) {
 		enter = true
 		$("#next").fadeToggle();
@@ -27,6 +25,10 @@ $(document).ready(function() {
 		$("#next").fadeIn();
 		toggle = false;        
 	};
+
+	$("#register").click(function() {
+  		$("#welcomebox").css('display', 'block');
+	});
 
 	
 		$(document).keypress(function(event) {

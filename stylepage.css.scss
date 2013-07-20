@@ -79,18 +79,16 @@ body {
 
 
 #headerimg {
-	margin-left: 1%;
-	float: left;
-	margin-top: -.5%;
-	height: 100%;
+height:100%;
+width:15%;
 	
 }
 
 #logo {
-	padding-top: 10%;
+	padding-top: 0%;
 	min-width:5px;
 	min-height: 35px;
-	height:85%;
+	height:25%;
 	opacity: .95;
 	-moz-transition: margin 1s ease-in-out;
 	-webkit-transition: margin 1s ease-in-out;
@@ -259,6 +257,10 @@ color:white;
 	position: absolute;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
+}
+
+#welcomelogo {
+
 }
 
 .feedback-input {
@@ -467,6 +469,10 @@ transition: 0.1s all ease-in-out;*/
 
 /*---------------Question Box stuff ends------------*/
 
+tr {
+	color:white;
+}
+
 #welcomebox{
 	/*display: none;*/
 	text-align: center;
@@ -474,7 +480,7 @@ transition: 0.1s all ease-in-out;*/
 	min-width:35%;
 	margin: 0px auto;
 	min-height: 100px;
-	max-height: 300px;
+	max-height: 500px;
 	/*min-height: 30%;
 	max-height:35%;*/
 	font-color:rg(255,255,255);
@@ -513,10 +519,8 @@ transition: 0.1s all ease-in-out;*/
 }
 
 #welcomeimg {
-	width: 210px;
-	padding-top:35%;
-	padding-left: 40%;
-	position:relative;
+	margin-left: 0 auto;
+	height: 10%;
 }
 
 #next {
