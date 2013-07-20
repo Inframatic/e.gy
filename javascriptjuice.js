@@ -47,7 +47,26 @@ $(document).ready(function() {
 	var cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18, minZoom: 3, attribution: cloudmadeAttrib, subdomains: subDomains, zindex: -1});
 	var latlng = new L.LatLng(85.037, -167.343);
 	var maxBounds = new L.LatLngBounds(latlng);
-	var london = new L.LatLng(51.505, -0.09);
-	var map = new L.Map('map', {center: london, zoom: 13, zoomControl: false, layers: [cloudmade]});
+	var start = new L.LatLng(15.505, -45.09);
+	var map = new L.Map('map', {center: start, zoom: 4, zoomControl: false, layers: [cloudmade]});
 	new L.Control.Zoom({position: "bottomright"}).addTo(map)
+	L.icon = function (options) {
+    return new L.Icon(options);
+};
+		var blueIcon = L.icon({
+	  	iconUrl: 'bluemarker.png',
+	    // shadowUrl: 'bluemarker.png',
+    iconSize:     [28, 35], // size of the icon
+    // shadowSize:   [38, 95], // size of the shadow
+    iconAnchor:   [21, 34], // point of the icon which will correspond to marker's location
+    // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+	});
+	var marker = L.marker([43.6481, -79.4042], {icon: blueIcon}).addTo(map).bindPopup("Welcome!");
+	L.marker([51.5, -0.09], {icon: blueIcon}).addTo(map).bindPopup("I am a green leaf.");
+L.marker([51.495, -0.083], {icon: blueIcon}).addTo(map).bindPopup("I am a red leaf.");
+L.marker([51.49, -0.1], {icon: blueIcon}).addTo(map).bindPopup("I am an orange leaf.");
+L.marker([51.5, -0.09]).addTo(map)
+    .bindPopup('A pretty CSS3 popup. <br> Easily customizable.')
+    .openPopup();
 });
