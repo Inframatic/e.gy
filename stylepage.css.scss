@@ -89,8 +89,10 @@ body {
 
 
 #headerimg {
-height:100%;
-width:15%;
+margin-top: 0.3%;
+margin-left: 0.2%;
+height:90%;
+width:18%;
 	
 }
 
@@ -118,11 +120,18 @@ width:15%;
 	min-height: 40px;
 	float: right;
 	text-align: right;
-	margin-right: 1%;
 	height: 100%;
 	max-height:90px;
 	position:relative;
 /*	display:inline-block;*/
+}
+
+#headernav li {
+  float:left;
+}
+
+#headernav li:last-child {
+  margin-right:0;
 }
 
 #headernav ul {
@@ -140,7 +149,25 @@ width:15%;
 	float: right;
 }
 
+#headernav li a:after {
+  content:"";
+  display:block;
+  padding:10px 0 0 0;
+  border-top:2px solid white;
+  width:0;
+  transition:all 0.3s;
+  -webkit-transition:all 0.3s;
+  -moz-transition:all 0.3s;
+}
 
+#headernav li a:hover {
+  color:white;
+}
+
+#headernav li a:hover:after {
+  width:100%;
+  border-top:2px solid white;
+}
 
 .nav-buttons a {
 	box-sizing: border-box;
@@ -148,14 +175,16 @@ width:15%;
 	height:100%;
 	width:100%;
 	text-align: center;
-	padding: 18% 0% 10% 0%;
-	border-right: solid 1px #333333;
+	padding: 15% 0% 20% 0%;
+	border-right: solid 1px white;
 	font-size: 1.0em;
 	text-decoration: none;
-	-webkit-transition: padding .2s ease-in-out;
-	-moz-transition: padding .2s ease-in-out;
-	transition: padding .2s ease-in-out;
 	color:white;
+	text-decoration:none;
+  	color:white;
+  	transition:all 0.3s;
+  	-webkit-transition:all 0.3s;
+  	-moz-transition:all 0.3s;
 }
 
 @media all and (max-width: 575px) and (min-width: 0px) {
@@ -166,7 +195,7 @@ width:15%;
 }
 
 .nav-buttons a:hover {
-	padding-top: 12%;
+
 }
 
 
@@ -439,6 +468,12 @@ display:inline-block;
 transition: 0.1s all ease-in-out;*/
 }
 
+@media (max-width: 800px) {
+	.headerimg {
+		height: 50%;
+	}
+}
+
 @media (max-width: 320px) {
     .circle .box {padding: 50%;}
 }
@@ -486,8 +521,8 @@ transition: 0.1s all ease-in-out;*/
 #welcomebox{
 	/*display: none;*/
 	text-align: center;
-	max-width: 45%;
-	min-width:35%;
+	max-width: 35%;
+	min-width:30%;
 	margin: 0px auto;
 	min-height: 100px;
 	max-height: 500px;
@@ -551,6 +586,7 @@ transition: 0.1s all ease-in-out;*/
 	left:30%;
 	margin: 0 auto;
 	width:43%;
+	min-width:600px;
 	background-color: #1E1F1F;
 	opacity:.95;
 	color:white;
