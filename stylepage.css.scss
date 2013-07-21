@@ -83,6 +83,7 @@ body {
 	background-color: #1E1F1F;
 	opacity: .95;
 	font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+	box-shadow: 2.5px 2.5px 2px;
 }
 
 
@@ -235,7 +236,7 @@ color:white;
 #sidebar
 {
 	background-color: #1E1F1F;
-    position:fixed;
+    position:absolute;
     float: left;
     margin-top: 130px;
     width: 250px;
@@ -245,7 +246,24 @@ color:white;
   	webkit-border-radius: 10px;
   	border-radius:10px;
   	border-top-left-radius: 0px;
+  	box-shadow: 2.5px 2.5px 3px;
 }
+
+#toggle {
+  float: right;
+  position: relative;
+  top: 50%;
+  right: -19px;
+  width: 20px;
+  height: 20px;
+  background-color: #2C2E2E;
+  border: 2px solid #ecf0f1;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 1px 5px 20px #1E1F1F inset;
+}
+
 /*sidebar end*/
 
 
@@ -546,6 +564,7 @@ transition: 0.1s all ease-in-out;*/
   	border-radius:15px;
 	top: 300px;
 	position:relative;
+	box-shadow: 2.5px 2.5px 3px;
 }
 
 #welcomebox h2 {
