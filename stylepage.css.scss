@@ -229,18 +229,26 @@ a:visited
 color:white;
 }
 
+
+
 /*side bar start*/
 #sidebar
 {
+	background-color: #1E1F1F;
     position:fixed;
     float: left;
     margin-top: 130px;
     width: 250px;
-    background: white;
     min-height: 100%;
-    opacity: .75;
+    opacity: .95;
+    -moz-border-radius: 10px;
+  	webkit-border-radius: 10px;
+  	border-radius:10px;
+  	border-top-left-radius: 0px;
 }
 /*sidebar end*/
+
+
 
 
 /* Navigation */
@@ -536,7 +544,6 @@ transition: 0.1s all ease-in-out;*/
 	-moz-border-radius: 15px;
   	webkit-border-radius: 15px;
   	border-radius:15px;
-
 	top: 300px;
 	position:relative;
 }
