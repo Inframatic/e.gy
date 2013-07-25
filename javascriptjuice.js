@@ -25,29 +25,37 @@ $(document).ready(function() {
 		toggle = false;        
 	};
 
+	$("#welcomebox").click(function() {
+  		$("#welcomebox").fadeToggle();
+	});
+	
+	$("#aboutbox").click(function() {
+  		$("#aboutbox").fadeToggle();
+	});
+  		// click signin and display welcomebox but hide all others
 	$("#signin").click(function() {
-		$("#aboutbox").css('display', 'none');
-  		$("#welcomebox").css('display', 'block');
+		$("#aboutbox").fadeOut();
+  		$("#welcomebox").fadeIn();
 	});
 	$("#register").click(function() {
-		$("#aboutbox").css('display', 'none');
-  		$("#welcomebox").css('display', 'block');
+		$("#aboutbox").fadeOut();
+  		$("#welcomebox").fadeIn(); 
 	});
 		
 	$("#about").click(function() {
-  		$("#welcomebox").css('display', 'none');
-  		$("#aboutbox").css('display', 'block');
+  		$("#welcomebox").fadeOut();
+  		$("#aboutbox").fadeIn();
 
 	});
-	
-		$(document).keypress(function(event) {
-			var keycode = (event.keyCode ? event.keyCode : event.which);
-			if (keycode == 13) { 
-				$("#welcomebox").css('display', 'none');
-				$(".container").css('display', 'block')
-				// $(".questionbox").css('display', 'block');
-			}
-		})
+	// press enter to continue
+		// $(document).keypress(function(event) {
+		// 	var keycode = (event.keyCode ? event.keyCode : event.which);
+		// 	if (keycode == 13) { 
+		// 		$("#welcomebox").css('display', 'none');
+		// 		$(".container").css('display', 'block')
+		// 		// $(".questionbox").css('display', 'block');
+		// 	}
+		// })
 		
 	$("#toggle").click(function(){
   var w = $('#sidebar').width();
@@ -85,11 +93,11 @@ $(document).ready(function() {
     // shadowAnchor: [4, 62],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 	});
-	var marker = L.marker([43.6481, -79.4042], {icon: blueIcon}).addTo(map).bindPopup("Welcome!");
-	L.marker([51.5, -0.09], {icon: blueIcon}).addTo(map).bindPopup("I am a green leaf.");
-L.marker([51.495, -0.083], {icon: blueIcon}).addTo(map).bindPopup("I am a red leaf.");
-L.marker([51.49, -0.1], {icon: blueIcon}).addTo(map).bindPopup("I am an orange leaf.");
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup. <br> Easily customizable.')
-    .openPopup();
+// 	var marker = L.marker([43.6481, -79.4042], {icon: blueIcon}).addTo(map).bindPopup("Welcome!");
+// 	L.marker([51.5, -0.09], {icon: blueIcon}).addTo(map).bindPopup("I am a green leaf.");
+// L.marker([51.495, -0.083], {icon: blueIcon}).addTo(map).bindPopup("I am a red leaf.");
+// L.marker([51.49, -0.1], {icon: blueIcon}).addTo(map).bindPopup("I am an orange leaf.");
+// L.marker([51.5, -0.09]).addTo(map)
+//     .bindPopup('A pretty CSS3 popup. <br> Easily customizable.')
+//     .openPopup();
 });
